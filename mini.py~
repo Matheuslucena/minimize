@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+input = open("/Users/usuario/Desktop/lorem.txt",'rb')
+output = open("/Users/usuario/Desktop/lorem-copy.txt",'wb')
+
+texte = input.read()
+texte = texte.replace("\n","")
+texte = texte.replace(" ","")
+print texte
+
+output.write(texte) 
+
+input.close()
+output.close()
+
+
+
+
+
+
